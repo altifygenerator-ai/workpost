@@ -1,65 +1,97 @@
-import Image from "next/image";
+import PostBuilder from "@/components/PostBuilder";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <section className="hero">
+        <nav className="nav">
+          <div className="logo">ShowYourWork</div>
+          <a href="#builder" className="navBtn">
+            Try It
+          </a>
+        </nav>
+
+        <div className="heroGrid">
+          <div>
+            <p className="eyebrow">For contractors & local service businesses</p>
+
+            <h1>Turn today’s work into a post that gets seen.</h1>
+
+            <p className="heroText">
+              Type what you did, choose the kind of post you need, and get
+              something ready to copy, paste, and publish. Simple, fast, and
+              built for real businesses that don’t have time to overthink
+              content.
+            </p>
+
+            <div className="heroTags">
+              <span>Finished jobs</span>
+              <span>Service promos</span>
+              <span>Google posts</span>
+              <span>Facebook ads</span>
+            </div>
+          </div>
+
+          <div className="previewCard">
+            <p className="previewLabel">Example</p>
+            <div className="previewInput">
+              Finished a gravel driveway outside Hot Springs. Customer had
+              washout issues after every rain. Added fresh gravel, shaped it
+              up, and cleaned up the edges.
+            </div>
+
+            <div className="previewOutput">
+              Knocked out a gravel driveway outside Hot Springs today. This one
+              had been washing out pretty bad after rain, so we brought in fresh
+              gravel, shaped it back up, and cleaned the edges so water can move
+              better. If your driveway is getting rough, holler at us and we can
+              take a look.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="builder" className="builderSection">
+        <div className="sectionIntro">
+          <p className="eyebrow dark">Post Builder</p>
+          <h2>Tell it what happened. Get a post worth using.</h2>
+          <p>
+            No fancy setup. No content calendar. Just a simple tool for turning
+            real work into something you can post.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <PostBuilder />
+      </section>
+
+      <section className="infoSection">
+        <div className="infoCard">
+          <h3>Built for busy owners</h3>
+          <p>
+            Most people know they should post more. They just don’t know what to
+            say after a long day.
+          </p>
         </div>
-      </main>
-    </div>
+
+        <div className="infoCard">
+          <h3>Made for real work</h3>
+          <p>
+            Finished jobs, before-and-afters, promos, Google updates, and quick
+            Facebook ad starters.
+          </p>
+        </div>
+
+        <div className="infoCard">
+          <h3>Simple by design</h3>
+          <p>
+            Type your notes, build the post, copy it, and move on.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        ShowYourWork — simple post builder for local service businesses.
+      </footer>
+    </main>
   );
 }
