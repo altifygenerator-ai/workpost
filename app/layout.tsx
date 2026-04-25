@@ -2,11 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-export const metadata: Metadata = {
-  title: "ShowYourWork | Simple Post Builder for Local Businesses",
+export const metadata = {
+  title: "ShowYourWork | Turn Your Jobs Into Posts That Get You More Calls",
   description:
-    "Turn job notes, service updates, and finished work into ready-to-post content for Facebook, Google, and local marketing.",
+    "Quickly turn your daily work into Facebook posts, Google updates, and simple ads. Built for contractors and local service businesses that want more calls without overthinking content.",
+  keywords: [
+    "contractor facebook posts",
+    "what to post as a contractor",
+    "local business marketing",
+    "how to get more jobs",
+    "facebook posts for small business",
+    "google business post ideas",
+    "contractor marketing ideas",
+  ],
 };
 
 export default function RootLayout({

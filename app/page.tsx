@@ -1,5 +1,9 @@
 import PostBuilder from "@/components/PostBuilder";
-
+export const metadata = {
+  title: "What to Post as a Contractor | Simple Post Builder",
+  description:
+    "Not sure what to post? Turn your finished jobs, services, and daily work into simple posts that bring in more calls and local customers.",
+};
 export default function Home() {
   return (
     <main>
