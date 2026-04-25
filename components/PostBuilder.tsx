@@ -106,8 +106,13 @@ export default function PostBuilder() {
   }
 
   async function copyOutput() {
+  try {
     await navigator.clipboard.writeText(output);
+    setOutput(output + "\n\nCopied to clipboard.");
+  } catch {
+    setOutput(output + "\n\nCopy failed. Highlight the text and copy it manually.");
   }
+}
 
   return (
     <div className="toolWrap">
@@ -191,18 +196,20 @@ export default function PostBuilder() {
         )}
       </div>
 
-      <div className="outputPanel">
-        <div className="outputTop">
-          <div>
-            <p>Finished result</p>
-            <h3>Ready to copy</h3>
-          </div>
+   <div className="outputPanel">
+  <div className="outputTop">
+    <div>
+      <p>Finished result</p>
+      <h3>Ready to copy</h3>
+    </div>
 
-          <button onClick={copyOutput}>Copy</button>
-        </div>
+    <button type="button" onClick={copyOutput} className="copyBtn">
+      Copy
+    </button>
+  </div>
 
-        <div className="outputBox">{output}</div>
-      </div>
+  <div className="outputBox">{output}</div>
+</div>
     </div>
   );
 }

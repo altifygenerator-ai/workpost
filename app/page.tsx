@@ -1,4 +1,5 @@
 import PostBuilder from "@/components/PostBuilder";
+import Link from "next/link";
 export const metadata = {
   title: "What to Post as a Contractor | Simple Post Builder",
   description:
@@ -8,12 +9,21 @@ export default function Home() {
   return (
     <main>
       <section className="hero">
-        <nav className="nav">
-          <div className="logo">ShowYourWork</div>
-          <a href="#builder" className="navBtn">
-            Try It
-          </a>
-        </nav>
+<nav className="nav">
+  <Link href="/" className="logo">
+    ShowYourWork
+  </Link>
+
+  <div className="navActions">
+    <Link href="/faq" className="navLink">
+      FAQ
+    </Link>
+
+    <a href="#builder" className="navBtn">
+      Try It
+    </a>
+  </div>
+</nav>
 
         <div className="heroGrid">
           <div>
