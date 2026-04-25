@@ -1,9 +1,18 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "What Should I Post as a Contractor? | ShowYourWork",
+  title: "What Should I Post as a Contractor? | ShowYourWork FAQ",
   description:
-    "Simple answers for contractors and local service businesses on what to post, how often to post, and how to turn daily work into posts that get more calls.",
+    "Answers for contractors and local service businesses on what to post, how often to post, and how to turn daily work into Facebook posts, Google updates, and simple ads.",
+  keywords: [
+    "what should I post as a contractor",
+    "contractor Facebook post ideas",
+    "Facebook posts for contractors",
+    "Google Business posts for contractors",
+    "local business marketing ideas",
+    "how to get more calls as a contractor",
+    "social media posts for small business",
+  ],
 };
 
 const faqs = [
