@@ -173,7 +173,7 @@ export default function PostBuilder() {
 
         {!isPaid && (
           <div className="unlockBox">
-            <p>Need more than 5 uses?</p>
+            <p>Need more than 15 uses?</p>
             <button onClick={() => (window.location.href = STRIPE_LINK)}>
               Unlock Full Access
             </button>
