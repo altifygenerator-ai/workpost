@@ -43,9 +43,15 @@ export const metadata: Metadata = {
       "Create Facebook posts, Google Business updates, and before-and-after posts from rough job notes. Built for contractors and local service businesses.",
     url: "https://www.showyourwork.site",
     siteName: "ShowYourWork",
-    type: "website",
-    locale: "en_US",
-  },
+     images: [
+    {
+      url: "/og.png",
+      width: 1200,
+      height: 630,
+    },
+  ],
+  type: "website",
+},
 
   twitter: {
     card: "summary_large_image",
@@ -58,6 +64,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  
 };
 
 export default function RootLayout({

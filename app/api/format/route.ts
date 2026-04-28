@@ -96,6 +96,20 @@ Tone: ${tone || "casual and trustworthy"}
 
 User notes:
 ${text}
+
+Your job:
+Rewrite the user's notes into a finished post.
+
+Rules:
+1. The user's notes are the source of truth.
+2. Keep the same facts, job details, service type, and location.
+3. Do not invent anything.
+4. Do not add claims like licensed, insured, affordable, best, top-rated, family-owned, or years of experience unless the user wrote it.
+5. If details are missing, write around them naturally instead of making them up.
+6. Make it sound like a real local business owner wrote it.
+7. Keep it clear, useful, and easy to copy.
+
+Final post:
 `;
 
     // OpenAI request
