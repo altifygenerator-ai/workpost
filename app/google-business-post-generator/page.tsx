@@ -132,9 +132,39 @@ export default function GoogleBusinessPostGenerator() {
         </div>
       </section>
 
-      <footer>
-        ShowYourWork — Google Business post generator for local service businesses.
-      </footer>
+           <footer className="mt-20 border-t border-neutral-800 py-10 text-sm text-neutral-400">
+  <div className="max-w-5xl mx-auto px-6 flex flex-col gap-6">
+
+    <div className="flex flex-col gap-2">
+      <p className="text-white font-bold">ShowYourWork</p>
+      <p>Simple post builder for contractors and local service businesses.</p>
+    </div>
+
+    <div className="flex flex-col gap-2">
+      <p className="text-white font-semibold">Links</p>
+      <div className="flex flex-col gap-1">
+        <a href="/contractor-facebook-post-generator">Facebook Post Generator</a>
+        <a href="/before-after-post-generator">Before & After Generator</a>
+        <a href="/google-business-post-generator">Google Business Posts</a>
+        <a href="/job-completed-post-generator">Job Completed Posts</a>
+        <a href="/faq">FAQ</a>
+      </div>
+    </div>
+
+    <div className="flex flex-col gap-2">
+      <p className="text-white font-semibold">Contact</p>
+      <p>Questions or feedback?</p>
+      <a href="mailto:altifygenerator@gmail.com" className="underline">
+        altifygenerator@gmail.com
+      </a>
+    </div>
+
+    <p className="text-xs text-neutral-500 mt-4">
+      © {new Date().getFullYear()} ShowYourWork
+    </p>
+
+  </div>
+  </footer>
     </main>
   );
 }
