@@ -2,19 +2,62 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-export const metadata = {
-  title: "ShowYourWork | Turn Your Jobs Into Posts That Get You More Calls",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.showyourwork.site"),
+
+  title: {
+    default:
+      "ShowYourWork | Contractor Facebook & Google Post Generator",
+    template: "%s | ShowYourWork",
+  },
+
   description:
-    "Quickly turn your daily work into Facebook posts, Google updates, and simple ads. Built for contractors and local service businesses that want more calls without overthinking content.",
+    "Turn job notes into Facebook posts, Google Business updates, before-and-after posts, and simple ads for contractors and local service businesses.",
+
   keywords: [
-    "contractor facebook posts",
-    "what to post as a contractor",
-    "local business marketing",
-    "how to get more jobs",
-    "facebook posts for small business",
-    "google business post ideas",
-    "contractor marketing ideas",
+    "contractor post generator",
+    "contractor facebook post generator",
+    "facebook posts for contractors",
+    "google business post generator",
+    "before and after post generator",
+    "job completed post generator",
+    "what should contractors post",
+    "contractor social media posts",
+    "local business post ideas",
+    "small business facebook posts",
+    "google business profile posts",
+    "home service marketing",
+    "roofing facebook posts",
+    "landscaping facebook posts",
+    "concrete contractor posts",
+    "remodeling business posts",
   ],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "ShowYourWork | Turn Job Notes Into Posts That Get More Calls",
+    description:
+      "Create Facebook posts, Google Business updates, and before-and-after posts from rough job notes. Built for contractors and local service businesses.",
+    url: "https://www.showyourwork.site",
+    siteName: "ShowYourWork",
+    type: "website",
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "ShowYourWork | Contractor Post Generator",
+    description:
+      "Turn daily work into Facebook and Google posts without overthinking what to say.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

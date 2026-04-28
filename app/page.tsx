@@ -22,6 +22,7 @@ export default function Home() {
     <a href="#builder" className="navBtn">
       Try It
     </a>
+
   </div>
 </nav>
 
@@ -85,6 +86,19 @@ export default function Home() {
             Most people know they should post more. They just don’t know what to
             say after a long day.
           </p>
+     <Link
+  href="/before-after-post-generator"
+  className="inline-block mt-4 rounded-xl bg-orange-600 px-6 py-3 font-bold text-white"
+>
+  Try Before & After Post Generator
+</Link>
+
+<Link
+  href="/contractor-facebook-post-generator"
+  className="inline-block mt-4 rounded-xl bg-orange-600 px-6 py-3 font-bold text-white"
+>
+  Try the Facebook Post Generator
+</Link>
         </div>
 
         <div className="infoCard">
@@ -100,6 +114,7 @@ export default function Home() {
           <p>
             Type your notes, build the post, copy it, and move on.
           </p>
+             
         </div>
       </section>
 

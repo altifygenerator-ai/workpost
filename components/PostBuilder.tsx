@@ -19,9 +19,19 @@ const tones = [
   "More professional",
 ];
 
-export default function PostBuilder() {
+type PostBuilderProps = {
+  defaultFormat?: string;
+};
+
+export default function PostBuilder({
+  defaultFormat = "Finished Job Post",
+}: PostBuilderProps) {
+  const safeDefaultFormat = postTypes.includes(defaultFormat)
+    ? defaultFormat
+    : "Finished Job Post";
+
   const [text, setText] = useState("");
-  const [format, setFormat] = useState(postTypes[0]);
+  const [format, setFormat] = useState(safeDefaultFormat);
   const [businessType, setBusinessType] = useState("");
   const [location, setLocation] = useState("");
   const [tone, setTone] = useState(tones[0]);
