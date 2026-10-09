@@ -2,6 +2,7 @@ import Link from "next/link";
 import PostBuilder from "@/components/PostBuilder";
 
 export const metadata = {
+  alternates: { canonical: "/job-completed-post-generator" },
   title: "Job Completed Post Generator for Contractors | ShowYourWork",
   description:
     "Turn finished jobs into simple posts for contractors and local service businesses. Show your work and stay visible.",
