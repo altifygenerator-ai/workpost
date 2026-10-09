@@ -2,6 +2,7 @@ import Link from "next/link";
 import PostBuilder from "@/components/PostBuilder";
 
 export const metadata = {
+  alternates: { canonical: "/google-business-post-generator" },
   title: "Google Business Post Generator for Contractors | ShowYourWork",
   description:
     "Create simple Google Business Profile posts for contractors and local service businesses. Turn your work into updates that help you get found.",
