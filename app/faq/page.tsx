@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "/faq" },
   title: "What Should I Post as a Contractor? | ShowYourWork FAQ",
   description:
     "Answers for contractors and local service businesses on what to post, how often to post, and how to turn daily work into Facebook posts, Google updates, and simple ads.",
