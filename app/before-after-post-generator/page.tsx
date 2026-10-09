@@ -2,6 +2,7 @@ import Link from "next/link";
 import PostBuilder from "@/components/PostBuilder";
 
 export const metadata = {
+  alternates: { canonical: "/before-after-post-generator" },
   title:
     "Before and After Post Generator for Contractors | Facebook & Google Posts",
   description:
